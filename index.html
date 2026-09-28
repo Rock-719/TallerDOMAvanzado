@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller Práctico de DOM JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Taller de Manipulación del DOM y JS</h1>
+
+    <!-- 1. Cambiar un título con un botón -->
+    <section class="card">
+      <h2 id="titulo-cambiable">Título Original</h2>
+      <button id="btn-cambiar-titulo">Cambiar Título</button>
+    </section>
+
+    <!-- 2. Cambiar el color de un texto -->
+    <section class="card">
+      <p id="texto-color">Este texto cambiará de color al hacer clic.</p>
+      <button id="btn-cambiar-color">Cambiar Color</button>
+    </section>
+
+    <!-- 3. Mostrar / Ocultar un elemento -->
+    <section class="card">
+      <div id="box-toggle" class="box">Elemento Visibilidad</div>
+      <button id="btn-toggle">Mostrar / Ocultar</button>
+    </section>
+
+    <!-- 4 y 5. Crear y Eliminar elementos dinámicamente -->
+    <section class="card">
+      <h2>Elementos Dinámicos</h2>
+      <button id="btn-crear">Crear Elemento</button>
+      <div id="contenedor-dinamico"></div>
+    </section>
+
+    <!-- 6. Crear una lista a partir de un Array -->
+    <section class="card">
+      <h2>Lista desde Array</h2>
+      <ul id="lista-array"></ul>
+    </section>
+
+    <!-- 7. Crear tarjetas a partir de Objetos -->
+    <section class="card">
+      <h2>Tarjetas de Productos (Objetos)</h2>
+      <div id="contenedor-tarjetas" class="grid"></div>
+    </section>
+
+    <!-- 8. Formulario y mostrar sus datos -->
+    <section class="card">
+      <h2>Formulario de Contacto</h2>
+      <form id="formulario-contacto">
+        <input type="text" id="nombre" placeholder="Tu Nombre" required />
+        <input type="email" id="correo" placeholder="Tu Correo" required />
+        <button type="submit">Enviar Data</button>
+      </form>
+      <div id="resultado-form"></div>
+    </section>
+
+    <!-- 9. Lista de Tareas (To-Do List) -->
+    <section class="card">
+      <h2>Lista de Tareas</h2>
+      <div class="inline-form">
+        <input type="text" id="nueva-tarea" placeholder="Nueva tarea..." />
+        <button id="btn-agregar-tarea">Agregar</button>
+      </div>
+      <ul id="lista-tareas"></ul>
+    </section>
+
+    <!-- 10. CRUD Completo de Estudiantes -->
+    <section class="card">
+      <h2>CRUD de Estudiantes</h2>
+      <form id="form-estudiante" class="inline-form">
+        <input type="hidden" id="estudiante-id" />
+        <input
+          type="text"
+          id="estudiante-nombre"
+          placeholder="Nombre"
+          required
+        />
+        <input type="number" id="estudiante-edad" placeholder="Edad" required />
+        <button type="submit" id="btn-guardar-estudiante">
+          Guardar Estudiante
+        </button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-estudiantes"></tbody>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
